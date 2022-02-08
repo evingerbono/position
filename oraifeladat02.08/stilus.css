@@ -1,0 +1,78 @@
+
+article{
+    grid-area: a;
+}
+aside{
+    grid-area: as;
+    position: relative;
+}
+nav{
+    grid-area: n;
+    background-color: blue;
+}
+nav ul{
+    list-style-type: none;
+    list-style: none;
+    display: grid;
+    grid-template-columns:100px 100px 100px;
+}
+nav li a{
+    text-decoration: none;
+    padding: 10px;
+    color:rgb(21, 233, 14) ;
+}
+.lenyilo{
+    position: relative;
+}
+.lenyiloelem{
+    display: none;
+    position: absolute;
+}
+.lenyilo:hover .lenyiloelem{
+    display: block;
+}
+.kep{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding:5px;
+}
+img{
+    width: 100%;
+    padding:5px;
+}
+.info{
+    position: absolute;
+    top: 40%;
+    right: 40%;
+}
+.gomb{
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.kontener{
+    position: relative;
+}
+.xgomb{
+    position: absolute;
+    top:1%;
+    left: 3px;
+}
+main{
+    margin: auto;
+    max-width: 1000px;
+        display: grid;
+        grid-template-columns:  auto ;
+        grid-template-areas:    "n n n n"
+                                "a a a a"
+                                "as as as as"
+}
+@media screen and (max-width:700px){
+    main{
+        grid-template-columns: auto ;
+        grid-template-areas:    "n"
+                                "a"
+                                "as";
+    }
+}

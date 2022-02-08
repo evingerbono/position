@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evinger Bono</title>
+    <link rel="stylesheet" href="stilus.css">
+</head>
+
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="index.html">Menü</a></li>
+                <li class="lenyilo"><a href="index.html">Menü</a>
+                    <ul class="lenyiloelem">
+                        <li><a href="index.html">Menü</a></li>
+                        <li><a href="index.html">Menü</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Menü</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>Position</h1>
+            <div class="kep">
+                <img src="./kepek/taj1.jpg" alt="Téli táj">
+                <img src="./kepek/taj2.jpg" alt="Téli táj">
+                <img src="./kepek/taj3.jpg" alt="Téli táj">
+            </div>
+        </article>
+        <aside>
+            <img src="./kepek/taj1.jpg" alt="Téli táj">
+            <div class="info">
+                <div class="kontener">
+                    <div class="xgomb">X</div>
+                    <form action="" class="gomb">
+                        <fieldset>
+                            <legend>Tetszik ez a Position dolog?</legend>
+                            <input type="radio" id="html" name="tetszik" value="Igen">
+                            <label for="html">Igen</label>
+                            <br>
+                            <input type="radio" id="html" name="tetszik" value="Nem">
+                            <label for="html">Nem</label>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <script>
+        var closebtns = document.getElementsByClassName("xgomb");
+        var i;
+        
+        for (i = 0; i < closebtns.length; i++) {
+          closebtns[i].addEventListener("click", function() {
+            this.parentElement.style.display = 'none';
+          });
+        }
+        </script>
+</body>
+
+</html>
